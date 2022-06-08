@@ -28,7 +28,7 @@ function twoSum(numbers, target) {
         if (temp > target) {
             rightPointer--; 
         }
-        if (temp == target) {
+        if (temp == target && leftPointer !== rightPointer) {
             value1 = copyArray[leftPointer];
             value2 = copyArray[rightPointer];
             break;
@@ -83,4 +83,4 @@ const merge = (left, right, arr) => {
   }
 };
 
-console.log(twoSum([1, 2, 4, 3], 7));
+// console.log(twoSum([1, 2, 4, 3], 7));
