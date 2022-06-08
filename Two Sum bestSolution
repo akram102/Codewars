@@ -1,0 +1,13 @@
+function twoSum(numbers, target) {
+    let temp,hash = {}
+    numbers.forEach((element,index) => {
+        hash[element] = index;
+    });
+
+    for(let i of numbers){
+        temp = target - number[i];
+        if(typeof hash[temp] !== undefined){
+            return [i,hash[temp]];
+        }
+    }
+}
